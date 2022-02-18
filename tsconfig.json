@@ -1,15 +1,67 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "useDefineForClassFields": true,
     "module": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
-    "sourceMap": true,
-    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"]
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "mocha",
+      "chai"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@csts/*": [
+        "src/custom/assets/ts/*"
+      ],
+      "@cocp/*": [
+        "src/core/component/*"
+      ],
+      "@costore/*": [
+        "src/core/store/*"
+      ],
+      "@csstore/*": [
+        "src/custom/store/*"
+      ],
+      "@coscss/*": [
+        "src/core/assets/scss/*"
+      ],
+      "@csscss/*": [
+        "src/custom/assets/scss/*"
+      ],
+      "@locale/*": [
+        "src/custom/assets/ts/locale/*"
+      ],
+      "@colocale/*": [
+        "src/core/assets/ts/locale/*"
+      ],
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

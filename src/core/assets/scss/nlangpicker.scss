@@ -1,0 +1,16 @@
+@import "../../../custom/assets/scss/params";
+
+.n-lang-picker{
+  color: $primary-color
+}
+
+.n-flex{
+  display: flex;
+  align-items: center;
+  .n-flex-left{
+    flex: 1;
+  }
+  .n-flex-right{
+    padding: 18px;
+  }
+}

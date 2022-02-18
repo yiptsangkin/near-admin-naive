@@ -1,0 +1,58 @@
+@import "params";
+
+.n-login-panel{
+  min-width: 368px;
+  margin: 0 auto;
+  margin-top: 24px;
+  .n-login-tab-pane{
+    padding-top: 24px;
+  }
+  :deep(.n-tabs-wrapper){
+    width: unset!important;
+    .n-tabs-tab-wrapper{
+      min-width: 184px;
+      .n-tabs-tab{
+        margin: 0 auto;
+      }
+    }
+    .n-tabs-tab__label{
+      padding: 0 24px;
+    }
+  }
+}
+
+.n-frame-work-logo{
+  img{
+    height: 44px;
+    display: block;
+  }
+}
+
+.n-main-login-wrp{
+  top: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -68%);
+}
+
+.n-frame-work-title{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.n-frame-work-desc{
+  text-align: center;
+  color: $grey-a;
+}
+
+.n-login-btn{
+  margin-top: 12px;
+}
+
+.n-form-space{
+  width: 100%;
+  :deep(div:nth-child(1)[role="none"]){
+    flex: 1;
+  }
+}

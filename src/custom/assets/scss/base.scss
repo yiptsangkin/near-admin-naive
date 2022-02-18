@@ -1,0 +1,9 @@
+$primary-color: #41B783;
+
+.n-link-btn{
+  padding: 0;
+  &:hover, &:focus, &:active {
+    background-color: unset!important;
+    text-decoration: underline;
+  }
+}
