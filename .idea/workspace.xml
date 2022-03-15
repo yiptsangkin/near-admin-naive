@@ -2,78 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="248baffe-1aed-4072-b3e6-0c1823a72e9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/naside.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nbreadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/ncommontable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/ncommontablebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nheader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nmanage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nsearchpanel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/ntabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nuseroption.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nwebview.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/async-computed/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/countryflag.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/dict.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NAside.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NBreadcrumb.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NCommonTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NCommonTableBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NGetValidateCodeButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NLoading.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NManage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NNotFound.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NSearchPanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NTab.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NUserAvatar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NWebView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/api/auth/apiMethod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/api/auth/apiUrl.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/scss/logline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/ts/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/mock/data/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/mock/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/manage/view/home/HomePage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/manage/view/logline/LogLine.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/tpl/lang/lang.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/script/tpl/lang/lang.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/translate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/assets/scss/nlangpicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/scss/nlangpicker.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/assets/scss/params.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/scss/params.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/locale/lang.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/locale/lang.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/component/NLangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NLangPicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/scss/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/scss/loginpanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/scss/loginpanel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/dict.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/dict.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/de_DE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/de_DE.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/en_US.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/en_US.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/id_ID.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/id_ID.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/it_IT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/it_IT.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/ja_JP.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/ja_JP.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_BASE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_BASE.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/ru_RU.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/ru_RU.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/uk_UA.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/uk_UA.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_CN.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_CN.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_TW.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_TW.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/view/NLoginPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/view/login/NLoginPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/manage/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/manage/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/manage/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +146,7 @@
       <workItem from="1646806472671" duration="11000000" />
       <workItem from="1646873071954" duration="6049000" />
       <workItem from="1647239796609" duration="8356000" />
-      <workItem from="1647302701940" duration="5731000" />
+      <workItem from="1647302701940" duration="6839000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,7 @@ const chalk = require('chalk')
 const ora = require('ora')
 
 const ableLang = getAllCode()
-const getTranslate = async function (opt) {
+const getTranslate = async (opt) => {
     let strList = []
     if (typeof opt.obj === 'object') {
         for (let key in opt.obj) {
@@ -23,7 +23,7 @@ const getTranslate = async function (opt) {
             }
         }
     } else if (Array.isArray(opt.obj)) {
-        for (let i = 0; i < opt.obj.length; i++) {
+        for (let i = 0; i < opt.obj.length; i += 1) {
             const result = await getTranslate({
                 obj: opt.obj[i]
             })
@@ -40,11 +40,11 @@ const getTranslate = async function (opt) {
     return strList
 }
 
-const withBaseFile = function (str) {
+const withBaseFile = (str) => {
     return ['locale_BASE.ts', 'locale_MAP.ts'].indexOf(str) === -1
 }
 
-const transferLangLocale = function (locale) {
+const transferLangLocale = (locale) => {
     if (locale === 'zh-cn') {
         return 'zh-CN'
     } else if (locale === 'zh-tw') {
