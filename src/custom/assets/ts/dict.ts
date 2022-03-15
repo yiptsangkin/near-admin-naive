@@ -9,8 +9,15 @@ export default {
         getValidateCode: 'loginPanel.getValidateCode',
         autoLogin: 'loginPanel.autoLogin',
         forgetPwd: 'loginPanel.forgetPwd',
+        accountReq: 'loginPanel.accountReq',
+        passwordReq: 'loginPanel.passwordReq',
+        validateCodeReq: 'loginPanel.validateCodeReq',
+        validateTip: 'loginPanel.validateTip'
     },
     sysInfo: {
         description: 'sysInfo.description'
+    },
+    collapsedConfig: {
+        collapsedThresholdValue: 800
     }
 }

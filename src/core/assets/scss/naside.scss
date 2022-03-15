@@ -1,0 +1,18 @@
+@import "params";
+
+.n-aside-logo-wrp{
+  padding: 8px 0;
+  margin-top: unset!important;
+  .n-aside-title{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .n-aside-logo{
+    img{
+      height: 20px;
+      display: block;
+    }
+  }
+}
+

@@ -25,6 +25,9 @@
       "@csts/*": [
         "src/custom/assets/ts/*"
       ],
+      "@cots/*": [
+        "src/core/assets/ts/*"
+      ],
       "@cocp/*": [
         "src/core/component/*"
       ],
@@ -46,6 +49,9 @@
       "@colocale/*": [
         "src/core/assets/ts/locale/*"
       ],
+      "@api/*": [
+        "src/custom/api/*"
+      ]
     },
     "lib": [
       "esnext",

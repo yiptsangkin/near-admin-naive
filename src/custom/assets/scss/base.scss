@@ -1,9 +1,43 @@
 $primary-color: #41B783;
 
+html, body, #app, .n-config-provider{
+  height: 100%;
+}
+
 .n-link-btn{
   padding: 0;
+  &.unset-height{
+    height: unset;
+  }
   &:hover, &:focus, &:active {
     background-color: unset!important;
     text-decoration: underline;
+  }
+}
+
+.n-code-btn{
+  min-width: 100px;
+}
+
+#nprogress .bar {
+  background: darken($primary-color, 20) !important;
+}
+
+.n-full-common-table{
+  height: 100%;
+}
+
+.n-view-disabled{
+  .n-input--disabled{
+    .n-input__input-el{
+      text-decoration-color: unset;
+      color: unset;
+      font-weight: bold;
+    }
+    .n-input__textarea-el{
+      text-decoration-color: unset;
+      color: unset;
+      font-weight: bold;
+    }
   }
 }

@@ -1,0 +1,18 @@
+@import "params";
+
+:deep(.n-common-table-resizable-column) {
+  width: 1px!important;
+  height: 100%!important;
+  top: 0!important;
+  cursor: ew-resize;
+}
+
+:deep(.vdr-container.active) {
+  border-color: $primary-color;
+  border-style: dashed;
+}
+
+:deep(.vdr-container.dragging) {
+  border-color: $primary-color;
+  border-style: solid;
+}

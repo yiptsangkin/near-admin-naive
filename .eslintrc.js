@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   env: {
     node: true,
+    'vue/setup-compiler-macros': true
   },
   extends: [
     'plugin:vue/vue3-essential',
@@ -19,7 +20,14 @@ module.exports = {
     'indent': [2, 4],
     'comma-dangle': [0, 'ignore'],
     'object-curly-newline': [0, 'ignore'],
-    '@typescript-eslint/ban-ts-comment': [0, 'ignore']
+    '@typescript-eslint/ban-ts-comment': [0, 'ignore'],
+    'max-len': [0, 150],
+    '@typescript-eslint/no-this-alias': [0, 'ignore'],
+    'no-param-reassign': [0, 'ignore'],
+    'no-lonely-if': [0, 'ignore'],
+    '@typescript-eslint/no-explicit-any': [0, 'ignore'],
+    'vuejs-accessibility/click-events-have-key-events': [0, 'ignore'],
+    'no-restricted-syntax': [0, 'ignore']
   },
   overrides: [
     {
@@ -29,6 +37,7 @@ module.exports = {
       ],
       env: {
         mocha: true,
+        'vue/setup-compiler-macros': true
       },
     },
   ],

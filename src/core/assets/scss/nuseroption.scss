@@ -1,0 +1,35 @@
+@import "params";
+
+.n-user-popover{
+  .n-base-select-menu-option-wrapper{
+    padding: 0!important;
+  }
+  .n-base-select-option--disabled{
+    cursor: unset!important;
+  }
+  .n-user-username{
+    color: $primary-color!important;
+    font-weight: bold;
+  }
+  .n-user-attach{
+    color: lighten($primary-color, 25)!important;
+  }
+  .n-base-select-option{
+    padding: 0;
+    background-color: unset!important;
+    border-bottom: 1px solid rgba($primary-color, 0.15);
+    display: block;
+    min-height: 30px;
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+  .n-user-op-option{
+    cursor: pointer;
+    &:hover{
+      background-color: rgba($primary-color, 0.1);
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
+}

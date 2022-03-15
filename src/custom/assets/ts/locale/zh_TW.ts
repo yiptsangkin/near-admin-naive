@@ -1,6 +1,40 @@
 export default {
     locale: 'zh-tw',
     country: 'TW',
+    loginPanel: {
+        validateTip: '驗證碼為',
+        accountLogin: '賬號密碼登錄',
+        phoneLogin: '手機號登錄',
+        accountPhd: '請輸入手機號/賬號',
+        passwordPhd: '請輸入密碼',
+        validateCodePhd: '請輸入驗證碼',
+        loginBtn: '登錄',
+        autoLogin: '自動登錄',
+        forgetPwd: '忘記密碼',
+        accountReq: '手機號/賬號不能為空',
+        passwordReq: '密碼不能為空',
+        validateCodeReq: '驗證碼不能為空'
+    },
+    menuObj: {
+        homePage: '首頁',
+        'menu-0': '基礎功能',
+        'menu-1': '組件使用',
+        'menu-0-0': '技術選型',
+        'menu-0-0-0': 'Vue3.x',
+        'menu-0-0-1': 'NaiveUI',
+        'menu-0-0-2': 'Pinia',
+        'menu-0-0-3': 'Near-Admin',
+        'menu-1-0': '內置組件',
+        'menu-1-0-0': '搜索面板',
+        'menu-1-0-1': '通用表格',
+        'menu-0-1': '框架功能',
+        'menu-0-1-0': '頁面組件',
+        'menu-0-1-0-0': '組件頁面',
+        'menu-0-1-0-1': 'URL頁面',
+        'menu-0-1-1': '內置功能',
+        'menu-0-1-1-0': '項目配置',
+        'menu-0-1-1-1': '國際化'
+    },
     localeMap: {
         ar: '阿拉伯文',
         bg: '保加利亞文',
@@ -56,15 +90,64 @@ export default {
     sysInfo: {
         description: '一款基於Vue3和NaiveUI的好用中後台前端開發框架'
     },
-    loginPanel: {
-        accountLogin: '賬號密碼登錄',
-        phoneLogin: '手機號登錄',
-        accountPhd: '請輸入手機號/賬號',
-        passwordPhd: '請輸入密碼',
-        validateCodePhd: '請輸入驗證碼',
-        loginBtn: '登錄',
-        getValidateCode: '獲取驗證碼',
-        autoLogin: '自動登錄',
-        forgetPwd: '忘記密碼'
+    validateButton: {
+        unableValidate: '手機號為空或不符合規則',
+        getValidateCode: '獲取驗證碼'
+    },
+    tagObj: {
+        closeAll: '關閉全部標籤',
+        closeCur: '關閉當前標籤',
+        closeOther: '關閉其他標籤',
+        closeRight: '關閉右側標籤',
+        singlePage: '獨立頁面',
+        refreshPage: '刷新頁面',
+        affixPage: '固定頁面',
+        cancelAffixPage: '取消固定',
+        errorTip: {
+            homePageCloseError: '首頁不允許關閉',
+            affixPageCloseError: '固定頁不允許關閉',
+            homePageAffixError: '首頁無法取消固定'
+        },
+        checkSave: '是否關閉頁面？ （請確保標紅標籤頁面內容已經保存）',
+        cancelClose: '已取消關閉操作'
+    },
+    modalObj: {
+        tip: '提示',
+        warn: '警告',
+        confirm: '確認',
+        yes: '是',
+        no: '否'
+    },
+    userPanel: {
+        frontendLog: '前端日誌',
+        customSetting: '個性化設置',
+        cleanConfig: '清除配置',
+        cleanCache: '清除緩存'
+    },
+    searchPanel: {
+        expandText: '展開',
+        collapseText: '收起',
+        resetText: '重置',
+        searchText: '查詢'
+    },
+    comTip: {
+        notFoundModule: '找不到模塊：'
+    },
+    logLine: {
+        timeArea: '時間範圍',
+        tableTitle: '日誌列表',
+        tableColumn: {
+            index: '序號',
+            desc: '日誌描述',
+            type: '日誌類型',
+            time: '時間',
+            op: '操作'
+        }
+    },
+    logTimeList: {
+        halfDay: '半天內',
+        fullDay: '一天內',
+        weekDay: '一周內',
+        monthDay: '一個月內'
     }
 }

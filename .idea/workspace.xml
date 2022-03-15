@@ -2,72 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="248baffe-1aed-4072-b3e6-0c1823a72e9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/introjs.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/introjs.rewrite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/common/default_beauty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/common/default_handsome.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/logo/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/manage/403.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/manage/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/manage/500.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/intro.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/near.polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/android-chrome-maskable-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/android-chrome-maskable-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/apple-touch-icon-152x152.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/msapplication-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/pwa/icons/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/tpl/lang/lang.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/translate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nlangpicker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/params.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/component/NLangPicker.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/scss/base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/scss/copyright.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/scss/loginpanel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/scss/params.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/scss/particlebg.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/ts/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/ts/dict.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_BASE.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_MAP.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/custom/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/component/CopyRight.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/component/ParticlesBackground.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/page.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth/view/NLoginPanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/manage/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/manage/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/manage/page.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/manage/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/naside.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nbreadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/ncommontable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/ncommontablebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nheader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nmanage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nsearchpanel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/ntabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nuseroption.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/scss/nwebview.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/async-computed/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/countryflag.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/dict.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/assets/ts/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NAside.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NBreadcrumb.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NCommonTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NCommonTableBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NGetValidateCodeButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NLoading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NManage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NNotFound.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NSearchPanel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NTab.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NUserAvatar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/component/NWebView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/custom/api/auth/apiMethod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/custom/api/auth/apiUrl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/custom/assets/scss/logline.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/custom/assets/ts/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/custom/mock/data/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/custom/mock/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/manage/view/home/HomePage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/manage/view/logline/LogLine.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/tpl/lang/lang.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/script/tpl/lang/lang.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/translate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/scss/nlangpicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/scss/nlangpicker.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/scss/params.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/scss/params.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/locale/lang.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/locale/lang.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NLangPicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NLangPicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/scss/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/scss/loginpanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/scss/loginpanel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/dict.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/dict.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/de_DE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/de_DE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/en_US.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/en_US.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/id_ID.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/id_ID.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/it_IT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/it_IT.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/ja_JP.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/ja_JP.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_BASE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_BASE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/ru_RU.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/ru_RU.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/uk_UA.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/uk_UA.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_CN.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_CN.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_TW.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_TW.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/view/NLoginPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/view/login/NLoginPanel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/router/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +83,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Near-Admin Common Modal" />
         <option value="Vue Single File Component" />
+        <option value="SCSS File" />
+        <option value="Vue3" />
       </list>
     </option>
   </component>
@@ -91,6 +100,18 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/core/assets/scss/nsearchpanel.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/core/assets/scss/nmanage.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/core/assets/scss/params.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/core/store/index.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/core/component/NManage.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/core/component/NSearchPanel.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/build/config.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/manage/view/logline/LogLine.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/core/assets/ts/dict.ts" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -107,7 +128,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/custom/assets/scss" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/core/component" />
+    <property name="list.type.of.created.stylesheet" value="AUTO_DETECTED" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -117,18 +139,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/custom/assets/scss" />
-      <recent name="$PROJECT_DIR$/src/pages/auth/component" />
-      <recent name="$PROJECT_DIR$/src/custom/assets/ts" />
-      <recent name="$PROJECT_DIR$/script" />
-      <recent name="$PROJECT_DIR$/src/core/assets/locale" />
+      <recent name="$PROJECT_DIR$/src/core/component" />
+      <recent name="$PROJECT_DIR$/src/core/assets/scss" />
+      <recent name="$PROJECT_DIR$/src/core/assets" />
+      <recent name="$PROJECT_DIR$/src/custom" />
+      <recent name="$PROJECT_DIR$/src/core/assets/ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/core/assets/scss" />
+      <recent name="$PROJECT_DIR$/src/pages/auth/view/login" />
+      <recent name="$PROJECT_DIR$/src/core/assets/ts" />
       <recent name="$PROJECT_DIR$/src/pages/auth/view" />
       <recent name="$PROJECT_DIR$/script/tpl/lang" />
-      <recent name="$PROJECT_DIR$/src/custom/assets/ts/locale" />
-      <recent name="$PROJECT_DIR$/src/core/assets/ts" />
-      <recent name="$PROJECT_DIR$/src/core/component" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -174,11 +196,35 @@
       <workItem from="1644804247613" duration="3700000" />
       <workItem from="1644973274316" duration="3409000" />
       <workItem from="1645061330787" duration="1111000" />
-      <workItem from="1645146749068" duration="13016000" />
+      <workItem from="1645146749068" duration="13211000" />
+      <workItem from="1645253777190" duration="18563000" />
+      <workItem from="1645491024730" duration="54000" />
+      <workItem from="1645492358847" duration="14886000" />
+      <workItem from="1645577674534" duration="11698000" />
+      <workItem from="1645629436503" duration="35000" />
+      <workItem from="1645664566296" duration="11427000" />
+      <workItem from="1645714644751" duration="7303000" />
+      <workItem from="1646008994363" duration="19365000" />
+      <workItem from="1646096641746" duration="15668000" />
+      <workItem from="1646181508856" duration="19538000" />
+      <workItem from="1646269243883" duration="7347000" />
+      <workItem from="1646285590182" duration="8866000" />
+      <workItem from="1646357474360" duration="9958000" />
+      <workItem from="1646575709072" duration="2524000" />
+      <workItem from="1646616166796" duration="4323000" />
+      <workItem from="1646728646315" duration="3473000" />
+      <workItem from="1646806472671" duration="11000000" />
+      <workItem from="1646873071954" duration="6049000" />
+      <workItem from="1647239796609" duration="8356000" />
+      <workItem from="1647302701940" duration="5731000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

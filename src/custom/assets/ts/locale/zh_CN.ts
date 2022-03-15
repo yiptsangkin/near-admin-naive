@@ -1,6 +1,40 @@
 export default {
     locale: 'zh-cn',
     country: 'CN',
+    loginPanel: {
+        validateTip: '验证码为',
+        accountLogin: '账号密码登录',
+        phoneLogin: '手机号登录',
+        accountPhd: '请输入手机号/账号',
+        passwordPhd: '请输入密码',
+        validateCodePhd: '请输入验证码',
+        loginBtn: '登录',
+        autoLogin: '自动登录',
+        forgetPwd: '忘记密码',
+        accountReq: '手机号/账号不能为空',
+        passwordReq: '密码不能为空',
+        validateCodeReq: '验证码不能为空'
+    },
+    menuObj: {
+        homePage: '首页',
+        'menu-0': '基础功能',
+        'menu-1': '组件使用',
+        'menu-0-0': '技术选型',
+        'menu-0-0-0': 'Vue3.x',
+        'menu-0-0-1': 'NaiveUI',
+        'menu-0-0-2': 'Pinia',
+        'menu-0-0-3': 'Near-Admin',
+        'menu-1-0': '内置组件',
+        'menu-1-0-0': '搜索面板',
+        'menu-1-0-1': '通用表格',
+        'menu-0-1': '框架功能',
+        'menu-0-1-0': '页面组件',
+        'menu-0-1-0-0': '组件页面',
+        'menu-0-1-0-1': 'URL页面',
+        'menu-0-1-1': '内置功能',
+        'menu-0-1-1-0': '项目配置',
+        'menu-0-1-1-1': '国际化'
+    },
     localeMap: {
         ar: '阿拉伯文',
         bg: '保加利亚文',
@@ -56,15 +90,64 @@ export default {
     sysInfo: {
         description: '一款基于Vue3和NaiveUI的好用中后台前端开发框架'
     },
-    loginPanel: {
-        accountLogin: '账号密码登录',
-        phoneLogin: '手机号登录',
-        accountPhd: '请输入手机号/账号',
-        passwordPhd: '请输入密码',
-        validateCodePhd: '请输入验证码',
-        loginBtn: '登录',
-        getValidateCode: '获取验证码',
-        autoLogin: '自动登录',
-        forgetPwd: '忘记密码'
+    validateButton: {
+        unableValidate: '手机号为空或不符合规则',
+        getValidateCode: '获取验证码'
+    },
+    tagObj: {
+        closeAll: '关闭全部标签',
+        closeCur: '关闭当前标签',
+        closeOther: '关闭其他标签',
+        closeRight: '关闭右侧标签',
+        singlePage: '独立页面',
+        refreshPage: '刷新页面',
+        affixPage: '固定页面',
+        cancelAffixPage: '取消固定',
+        errorTip: {
+            homePageCloseError: '首页不允许关闭',
+            affixPageCloseError: '固定页不允许关闭',
+            homePageAffixError: '首页无法取消固定'
+        },
+        checkSave: '是否关闭页面？ （请确保标红标签页面内容已经保存）',
+        cancelClose: '已取消关闭操作'
+    },
+    modalObj: {
+        tip: '提示',
+        warn: '警告',
+        confirm: '确认',
+        yes: '是',
+        no: '否'
+    },
+    userPanel: {
+        frontendLog: '前端日志',
+        customSetting: '个性化设置',
+        cleanConfig: '清除配置',
+        cleanCache: '清除缓存'
+    },
+    searchPanel: {
+        expandText: '展开',
+        collapseText: '收起',
+        resetText: '重置',
+        searchText: '查询'
+    },
+    comTip: {
+        notFoundModule: '找不到模块：'
+    },
+    logLine: {
+        timeArea: '时间范围',
+        tableTitle: '日志列表',
+        tableColumn: {
+            index: '序号',
+            desc: '日志描述',
+            type: '日志类型',
+            time: '时间',
+            op: '操作'
+        }
+    },
+    logTimeList: {
+        halfDay: '半天内',
+        fullDay: '一天内',
+        weekDay: '一周内',
+        monthDay: '一个月内'
     }
 }

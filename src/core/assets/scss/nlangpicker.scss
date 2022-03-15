@@ -1,7 +1,8 @@
 @import "../../../custom/assets/scss/params";
 
 .n-lang-picker{
-  color: $primary-color
+  color: $primary-color;
+  display: block;
 }
 
 .n-flex{
@@ -11,6 +12,20 @@
     flex: 1;
   }
   .n-flex-right{
-    padding: 18px;
+    position: relative;
   }
+}
+
+.n-store-tip{
+  font-size: 10px;
+  color: $grey-f;
+  background-color: $primary-color;
+  position: absolute;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 2px 0;
+  right: 0;
+  bottom: -6px;
+  width: 32px;
+  text-align: center;
 }

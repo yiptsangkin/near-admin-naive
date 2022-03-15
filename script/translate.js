@@ -54,7 +54,29 @@ const transferLangLocale = function (locale) {
     }
 }
 
-const curPath = process.cwd().replace('/script',  '')
+const isObject = (item) => {
+    return (item && typeof item === 'object' && !Array.isArray(item))
+}
+
+const merge = (target, ...sources) => {
+    if (!sources.length) return target
+    const source = sources.shift()
+
+    if (isObject(target) && isObject(source)) {
+        for (const key in source) {
+            if (isObject(source[key])) {
+                if (!target[key]) Object.assign(target, { [key]: {} })
+                merge(target[key], source[key])
+            } else {
+                Object.assign(target, { [key]: source[key] })
+            }
+        }
+    }
+
+    return merge(target, ...sources)
+}
+
+const curPath = process.cwd().replace('/script', '')
 const corePath = `${curPath}/src/core/assets/ts/locale`
 const basePath = `${curPath}/src/custom/assets/ts/locale`
 const coreBasePath = `${corePath}/locale_BASE.ts`
@@ -69,7 +91,7 @@ try {
             fs.unlinkSync(`${basePath}/${item}`)
         }
     })
-    const optObj =  fs.statSync(optPath)
+    const optObj = fs.statSync(optPath)
     const isFile = optObj.isFile()
     let localeConfig
     let choices = []
@@ -105,10 +127,7 @@ try {
         // base locale file
         let baseFile = require(translateBasePath)
         const coreBaseFile = require(coreBasePath)
-        baseFile = {
-            ...baseFile,
-            ...coreBaseFile
-        }
+        baseFile = merge(baseFile, coreBaseFile)
         const spinner = ora()
         for (let i = 0; i < response.targetLang.length; i++) {
             let item = response.targetLang[i]
@@ -132,7 +151,7 @@ try {
             }
             targetFile.locale = localeCode
             targetFile.country = item.split('_')[1]
-            let resultText = JSON.stringify(targetFile,null, 4)
+            let resultText = JSON.stringify(targetFile, null, 4)
             const keyList = resultText.match(/".*?":/g)
             keyList.forEach(function (citem) {
                 if (!/-/.test(citem)) {
@@ -175,8 +194,8 @@ try {
         // read lang.tpl
         let tplFileCtx = fs.readFileSync(`${curPath}/script/tpl/lang/lang.tpl`, 'utf-8')
         tplFileCtx = tplFileCtx.replace('<% importTpl %>', `${uniLocaleStr}\n${customLocale.join('\n')}`)
-                               .replace('<% exportCustomerTpl %>', `${customOpt.join(',\n        ')}`)
-                               .replace('<% exportUiTpl %>', `${uiOpt.join(',\n    ')}`)
+            .replace('<% exportCustomerTpl %>', `${customOpt.join(',\n        ')}`)
+            .replace('<% exportUiTpl %>', `${uiOpt.join(',\n    ')}`)
         fs.writeFileSync(`${corePath}/lang.ts`, tplFileCtx)
         console.log(chalk.green('translate success'))
     }()

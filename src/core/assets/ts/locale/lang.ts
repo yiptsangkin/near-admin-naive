@@ -10,8 +10,10 @@ import customUkUA from '@locale/uk_UA.ts'
 import customZhCN from '@locale/zh_CN.ts'
 import customZhTW from '@locale/zh_TW.ts'
 
+const globalLocale = window.localStorage.getItem('nearCacheLang') || 'zh-cn'
+
 const i18n = createI18n({
-    locale: 'zh-cn',
+    locale: globalLocale,
     fallbackLocale: 'zh-cn',
     messages: {
         [customDeDE.locale]: customDeDE,
@@ -40,5 +42,6 @@ const uiI18nMap = {
 
 export default {
     i18n,
-    uiI18nMap
+    uiI18nMap,
+    t: i18n.global.t
 }

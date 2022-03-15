@@ -1,0 +1,16 @@
+@import "params";
+
+.n-manage{
+  height: 100%;
+  .n-common-content{
+    height: calc(100% - 48px);
+    &.n-common-content-default{
+      background-color: $grey-f7;
+    }
+    .n-component-page{
+      height: calc(100% - 64px);
+      padding: 0 12px 12px 12px;
+      overflow: auto;
+    }
+  }
+}

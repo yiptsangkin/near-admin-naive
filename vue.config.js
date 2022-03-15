@@ -108,6 +108,7 @@ module.exports = {
             .set('vue$', 'vue/dist/vue.runtime.esm-bundler.js')
             .set('@', path.resolve('src'))
             .set('@csts', path.resolve('src/custom/assets/ts'))
+            .set('@cots', path.resolve('src/core/assets/ts'))
             .set('@cocp', path.resolve('src/core/component'))
             .set('@costore', path.resolve('src/core/store'))
             .set('@csstore', path.resolve('src/custom/store'))
@@ -115,6 +116,7 @@ module.exports = {
             .set('@csscss', path.resolve('src/custom/assets/scss'))
             .set('@locale', path.resolve('src/custom/assets/ts/locale'))
             .set('@colocale', path.resolve('src/core/assets/ts/locale'))
+            .set('@api', path.resolve('src/custom/api'))
             .end()
     },
     pwa: {

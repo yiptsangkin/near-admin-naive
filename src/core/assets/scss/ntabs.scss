@@ -1,0 +1,72 @@
+@import "params";
+
+.n-common-tabs-wrp{
+  width: calc(100% - 36px);
+  overflow-y: hidden;
+  background-color: rgba($primary-color, 0.08);
+  height: 32px;
+}
+
+.n-common-tabs{
+  white-space: nowrap;
+  overflow-x: auto;
+  height: 48px;
+}
+
+.n-common-tab{
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+  display: inline-block;
+  border-right: 2px solid rgba($primary-color, 0.3);
+  cursor: pointer;
+  &.check-save{
+    border-right: 2px solid rgba($red-6, 0.3)!important;
+    background-color: rgba($red-6, 0.2)!important;
+  }
+  &:last-child{
+    border-right: none;
+  }
+  &.cur, &:hover{
+    background-color: rgba($primary-color, 0.2);
+  }
+}
+
+.n-common-tab-more{
+  height: 32px;
+  line-height: 32px;
+  width: 36px;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  background-color: rgba($primary-color, 0.08);
+  &:hover{
+    color: lighten($primary-color, 10);
+  }
+  img{
+    display: block;
+  }
+}
+
+.n-affix-circle{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $primary-color;
+  vertical-align: middle;
+}
+
+.n-tab-close{
+  cursor: pointer;
+  &:hover{
+    color: $primary-color;
+  }
+  .n-icon{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
