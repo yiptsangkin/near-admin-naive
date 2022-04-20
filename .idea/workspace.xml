@@ -2,8 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="248baffe-1aed-4072-b3e6-0c1823a72e9f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/translate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/scss/ncommontablebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/scss/ncommontablebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/scss/nmanage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/scss/nmanage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/scss/params.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/scss/params.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/dict.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/dict.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/locale/lang.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/locale/lang.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/locale/locale_BASE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/assets/ts/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/assets/ts/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NBreadcrumb.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NBreadcrumb.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NCommonTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NCommonTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NCommonTableBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NCommonTableBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NNotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NNotFound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NSearchPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NSearchPanel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/component/NTab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/component/NTab.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/scss/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/de_DE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/de_DE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/en_US.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/en_US.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/id_ID.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/it_IT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/it_IT.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/ja_JP.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/ja_JP.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_MAP.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/locale_MAP.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/ru_RU.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/ru_RU.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/uk_UA.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_CN.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_CN.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_TW.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/locale/zh_TW.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/assets/ts/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/assets/ts/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom/mock/data/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom/mock/data/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage/view/home/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/view/home/HomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage/view/logline/LogLine.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage/view/logline/LogLine.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +113,11 @@
       <recent name="$PROJECT_DIR$/src/core/assets/ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/custom/assets/ts" />
       <recent name="$PROJECT_DIR$/src/core/assets/scss" />
       <recent name="$PROJECT_DIR$/src/pages/auth/view/login" />
       <recent name="$PROJECT_DIR$/src/core/assets/ts" />
       <recent name="$PROJECT_DIR$/src/pages/auth/view" />
-      <recent name="$PROJECT_DIR$/script/tpl/lang" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -146,7 +183,29 @@
       <workItem from="1646806472671" duration="11000000" />
       <workItem from="1646873071954" duration="6049000" />
       <workItem from="1647239796609" duration="8356000" />
-      <workItem from="1647302701940" duration="6839000" />
+      <workItem from="1647302701940" duration="11193000" />
+      <workItem from="1647398148020" duration="78000" />
+      <workItem from="1647414024170" duration="676000" />
+      <workItem from="1647478120602" duration="709000" />
+      <workItem from="1647911918519" duration="6500000" />
+      <workItem from="1648001250254" duration="7266000" />
+      <workItem from="1648100623965" duration="629000" />
+      <workItem from="1648170117787" duration="6677000" />
+      <workItem from="1648187023953" duration="603000" />
+      <workItem from="1648428513673" duration="1972000" />
+      <workItem from="1648543602305" duration="668000" />
+      <workItem from="1648601356999" duration="5601000" />
+      <workItem from="1648697832070" duration="10543000" />
+      <workItem from="1648775421643" duration="1813000" />
+      <workItem from="1648884725985" duration="476000" />
+      <workItem from="1649292857979" duration="14735000" />
+      <workItem from="1649378581365" duration="19876000" />
+      <workItem from="1649638512287" duration="9993000" />
+      <workItem from="1649663794755" duration="1073000" />
+      <workItem from="1649727723314" duration="5177000" />
+      <workItem from="1649811608866" duration="16056000" />
+      <workItem from="1650331305928" duration="516000" />
+      <workItem from="1650422548788" duration="3329000" />
     </task>
     <servers />
   </component>

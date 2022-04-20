@@ -142,6 +142,16 @@ export default {
             type: '日志类型',
             time: '时间',
             op: '操作'
+        },
+        extra: {
+            view: '查看',
+            logDetail: '日志明细',
+            logLevel: '日志等级',
+            logType: '日志类型',
+            logDesc: '日志描述',
+            requestDetail: '请求明细',
+            clearLog: '清空日志',
+            clearLogSuccess: '清空成功'
         }
     },
     logTimeList: {
@@ -149,5 +159,49 @@ export default {
         fullDay: '一天内',
         weekDay: '一周内',
         monthDay: '一个月内'
+    },
+    comTable: {
+        allPick: '全选'
+    },
+    errorPage: {
+        errorTip: {
+            notFoundTip: '抱歉，你访问的页面不存在',
+            notRightTip: '抱歉，你没有权限访问该页面',
+            noServiceTip: '抱歉，服务器发生了问题，请稍后重试'
+        },
+        btnText: '关闭页面'
+    },
+    guide: {
+        pageComponent: {
+            currentCp: '当前组件',
+            tableTitle: '页面传参',
+            paramKey: '参数键',
+            paramValue: '参数值',
+            tip: '可以通过组件实体的params参数进行页面组件的传参数',
+            checkSave: '<Boolean>`checkSave`表示是否在关闭页面的时候抛出提示',
+            apiNew: '<Boolean>`apiNew`表示是否对页面进行权限校验',
+            isAffix: '<Boolean>`isAffix`表示是否对固定当前页面',
+            pageUrl: '<String>`pageUrl`表示页面组件外链地址',
+            pageApi: '页面操作api',
+            addPage: '新增页面',
+            refreshPage: '刷新页面',
+            closePage: '关闭页面',
+            state: '状态',
+            func: '方法',
+            example: '例子',
+            description: '描述',
+            exampleCode: '示例代码'
+        },
+        i18nInternational: {
+            supportLang: {
+                tip: '当前支持语种'
+            }
+        },
+        applicationConfig: {
+            applicationConfig: '应用配置',
+            pageConfig: 'SPA配置',
+            contextDir: '如果打包需要增加应用名的二级目录，可以通过修改build/config.js和src/custom/assets/ts/config.ts中两个文件publicPath变量。',
+            pageConfigDesc: 'page.config.json中的内容将会在public/basic.html中渲染，目前支持的type有css、js对于一些较大的第三方库如babylonjs等可以尝试通过这种方式进行加载。'
+        }
     }
 }

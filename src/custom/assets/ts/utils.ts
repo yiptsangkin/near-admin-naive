@@ -5,7 +5,6 @@ import md5 from 'js-md5'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import LogLine from 'logline'
-import { MenuOption, MenuGroupOption } from 'naive-ui'
 
 NProgress.configure({ showSpinner: false })
 
@@ -395,41 +394,6 @@ const setCacheLocalStorage = (cacheKey: string, cacheValue: any) => {
 
 const getCacheLocalStorage = (cacheKey: string) => localStorage.getItem(cacheKey)
 
-const isEmpty = (val: any): boolean => {
-    if (Array.isArray(val)) {
-        if (val.length > 0) {
-            return false
-        }
-        return true
-    }
-    return !(val !== undefined && val !== null && val !== '')
-}
-
-const getMenuRootCp = (menuList: MenuOption[] | MenuGroupOption[], isObj?: boolean, replaceField = { label: 'label' }) => {
-    let rightPathList: any[] = []
-    menuList.forEach((item: MenuOption) => {
-        if (isEmpty(item.children) && !isEmpty(item.component)) {
-            if (isObj) {
-                rightPathList.push({
-                    component: item.component,
-                    key: item.key,
-                    label: item[replaceField.label]
-                })
-            } else {
-                rightPathList.push(item.key)
-            }
-        } else if (!isEmpty(item.children) && isEmpty(item.component)) {
-            rightPathList = rightPathList.concat(getMenuRootCp(item.children, isObj, replaceField))
-        }
-    })
-    return rightPathList
-}
-
-const getIfExistMenu = (menuKey: string, menuList: MenuOption[] | MenuGroupOption[]) => {
-    const rootMenuList = getMenuRootCp(menuList)
-    return rootMenuList.indexOf(menuKey)
-}
-
 const getCurTabIdx = (tabList: any[], tabKey: string) => {
     let curTabIdx = -1
     tabList.forEach((item: any, idx: number) => {
@@ -440,14 +404,39 @@ const getCurTabIdx = (tabList: any[], tabKey: string) => {
     return curTabIdx
 }
 
+const deepClone = (obj) => {
+    if (typeof obj !== 'object' || obj === null) {
+        return obj
+    }
+
+    if (obj instanceof Date) {
+        return new Date(obj.getTime())
+    }
+
+    if (obj instanceof Array) {
+        return obj.reduce((arr, item, i) => {
+            arr[i] = deepClone(item)
+            return arr
+        }, [])
+    }
+
+    if (obj instanceof Object) {
+        return Object.keys(obj).reduce((newObj, key) => {
+            newObj[key] = deepClone(obj[key])
+            return newObj
+        }, {})
+    }
+
+    return JSON.parse(JSON.stringify(obj))
+}
+
 export default {
     checkChinesePhone,
     sendReq,
     randomCharacter,
     setCacheLocalStorage,
     getCacheLocalStorage,
-    getIfExistMenu,
-    getMenuRootCp,
     getCurTabIdx,
-    logLineObj
+    logLineObj,
+    deepClone
 }

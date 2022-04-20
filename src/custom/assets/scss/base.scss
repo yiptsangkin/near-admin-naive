@@ -25,6 +25,9 @@ html, body, #app, .n-config-provider{
 
 .n-full-common-table{
   height: 100%;
+  .n-data-table-wrapper{
+    background-color: var(--n-color);
+  }
 }
 
 .n-view-disabled{

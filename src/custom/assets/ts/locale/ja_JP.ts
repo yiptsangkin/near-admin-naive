@@ -9,7 +9,7 @@ export default {
         passwordPhd: 'パスワードを入力してください',
         validateCodePhd: '確認コードを入力してください',
         loginBtn: 'ログイン',
-        autoLogin: '自動ログイン',
+        autoLogin: 'オートログイン',
         forgetPwd: 'パスワードをお忘れですか',
         accountReq: '携帯電話番号/アカウントを空にすることはできません',
         passwordReq: 'パスワードを空白にすることはできません',
@@ -57,7 +57,7 @@ export default {
         hy: 'アルメニア語',
         id: 'インドネシア語',
         is: 'アイスランド語',
-        it: 'イタリアの ',
+        it: 'イタリア語 ',
         ja: '日本',
         kn: 'カナダ',
         ko: '韓国語',
@@ -142,6 +142,16 @@ export default {
             type: 'ログタイプ',
             time: '時間',
             op: '為替える'
+        },
+        extra: {
+            view: '小切手',
+            logDetail: 'ロギング',
+            logLevel: 'ログレベル',
+            logType: 'ログタイプ',
+            logDesc: 'ログの説明',
+            requestDetail: '詳細をリクエストする',
+            clearLog: '空のログ',
+            clearLogSuccess: '成功'
         }
     },
     logTimeList: {
@@ -149,5 +159,49 @@ export default {
         fullDay: '一日に',
         weekDay: '1週間以内に',
         monthDay: '一ヶ月以内に'
+    },
+    comTable: {
+        allPick: 'すべて選択'
+    },
+    errorPage: {
+        errorTip: {
+            notFoundTip: '申し訳ありませんが、訪問したページは存在しません。',
+            notRightTip: '申し訳ありませんが、このページにアクセスする権限はありません。',
+            noServiceTip: '申し訳ありませんが、サーバーに問題がありますので、後でもう一度やり直してください'
+        },
+        btnText: '閉じる'
+    },
+    guide: {
+        pageComponent: {
+            currentCp: '現在の部品',
+            tableTitle: 'ページ',
+            paramKey: 'パラメータキー',
+            paramValue: 'パラメータ値',
+            tip: 'ページコンポーネントのパラメータは、コンポーネントエンティティのパラメータパラメータによって実行できます。',
+            checkSave: '<boolean> `checkSave`閉じたときにプロンプ​​トをスローするかどうかを示します',
+            apiNew: '<Boolean> `Apinew`ページを確認するかどうかを示します',
+            isAffix: '<boolean> `ISAFFIX`現在のページが固定されているかどうかを示します',
+            pageUrl: '<文字列> `PageURL`ページコンポーネントの外部チェーンアドレスを示します',
+            pageApi: 'ページ操作API',
+            addPage: '新しいページ',
+            refreshPage: 'ページの更新',
+            closePage: '閉じる',
+            state: '州',
+            func: '方法',
+            example: '例',
+            description: '説明',
+            exampleCode: 'サンプルコード'
+        },
+        i18nInternational: {
+            supportLang: {
+                tip: '現在のサポート言語'
+            }
+        },
+        applicationConfig: {
+            applicationConfig: 'アプリケーション構成',
+            pageConfig: 'スパの設定',
+            contextDir: 'パッケージがアプリ名のセカンダリディレクトリを増やす必要がある場合は、build / config.jsおよびsrc / custom / assets / ts / config.tsの2つのファイルパブリックパス変数を変更できます。',
+            pageConfigDesc: 'page.config.jsonの内容はpublic / basic.htmlでレンダリングされます。現在サポートされているタイプはCSSを持ちます。JSはBabyLonjsなどのいくつかの大きなサードパーティライブラリのためにこのようにロードできます。'
+        }
     }
 }

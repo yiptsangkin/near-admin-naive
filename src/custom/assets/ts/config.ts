@@ -5,7 +5,7 @@ export default {
     publicPath,
     sysInfo: {
         name: 'Near-Admin',
-        logo: `/${publicPath}/static/images/logo/logo.svg`,
+        logo: publicPath ? `/${publicPath}/static/images/logo/logo.svg` : '/static/images/logo/logo.svg',
         noNeedCheckRightPath: ['home/HomePage'],
         settings: {
             isMock: true,

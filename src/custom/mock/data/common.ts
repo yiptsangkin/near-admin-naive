@@ -65,11 +65,20 @@ const getUserMenu = (): ComRespone => {
                                 children: [
                                     {
                                         label: 'menuObj.menu-0-1-0-0',
-                                        key: 'menu-0-1-0-0'
+                                        key: 'menu-0-1-0-0',
+                                        component: 'guide/PageComponent',
+                                        params: {
+                                            tip: 'guide.pageComponent.tip',
+                                            checkSave: 'guide.pageComponent.checkSave',
+                                            apiNew: 'guide.pageComponent.apiNew',
+                                            isAffix: 'guide.pageComponent.isAffix',
+                                            pageUrl: 'guide.pageComponent.pageUrl',
+                                        }
                                     },
                                     {
                                         label: 'menuObj.menu-0-1-0-1',
-                                        key: 'menu-0-1-0-1'
+                                        key: 'menu-0-1-0-1',
+                                        component: 'https://www.tusimple.com/'
                                     }
                                 ]
                             },
@@ -79,11 +88,13 @@ const getUserMenu = (): ComRespone => {
                                 children: [
                                     {
                                         label: 'menuObj.menu-0-1-1-0',
-                                        key: 'menu-0-1-1-0'
+                                        key: 'menu-0-1-1-0',
+                                        component: 'guide/ApplicationConfig',
                                     },
                                     {
                                         label: 'menuObj.menu-0-1-1-1',
-                                        key: 'menu-0-1-1-1'
+                                        key: 'menu-0-1-1-1',
+                                        component: 'guide/I18nInternational',
                                     }
                                 ]
                             }
@@ -126,8 +137,9 @@ const getUserInfo = (): ComRespone => {
         data: {
             userName: 'nearyip',
             userId: utils.randomCharacter(32),
-            userAvatar: `/${config.publicPath}/static/images/common/default_beauty.jpg`,
-            userEmail: 'yiptsangkin@gmail.com'
+            userAvatar: config.publicPath ? `/${config.publicPath}/static/images/common/default_beauty.jpg` : '/static/images/common/default_beauty.jpg',
+            userEmail: 'yiptsangkin@gmail.com',
+            userRole: ['admin'],
         },
         timestamp: new Date().getTime()
     }

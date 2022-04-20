@@ -4,6 +4,7 @@ import { ref, nextTick, h, computed } from 'vue'
 import { CloseOutline, ChevronDownOutline } from '@vicons/ionicons5'
 import costore from '@costore/index'
 import dict from '@cots/dict'
+import utils from '@csts/utils'
 
 const store = costore()
 
@@ -193,6 +194,7 @@ const dealTabEvent = (key: string, option: any) => {
         store.affixTab(option.idx, true)
         break
     case 'singlePage':
+        store.singlePage(option.idx)
         break
     case 'refreshPage':
         break
@@ -203,8 +205,8 @@ const dealTabEvent = (key: string, option: any) => {
 }
 
 const onSelectOption = (key: string, option: any) => {
+    closeType.value = key
     if (/close/.test(key)) {
-        closeType.value = key
         const existCheckSave = checkExistCheckSave()
         if (existCheckSave) {
             showCheckModal.value = true
@@ -225,6 +227,18 @@ const confirmClose = () => {
 }
 
 const checkSaveList = computed(() => getCheckSaveListByType().map((item) => item.key))
+
+const toPage = (key, menu) => {
+    const currentMenuIdx = utils.getCurTabIdx(store.curTabList, key)
+    if (currentMenuIdx === -1) {
+        // new page
+        store.addCurTab(menu)
+        store.setCurTabIdx(store.curTabList.length - 1)
+    } else {
+        // old page
+        store.setCurTabIdx(currentMenuIdx)
+    }
+}
 
 </script>
 
@@ -267,7 +281,14 @@ const checkSaveList = computed(() => getCheckSaveListByType().map((item) => item
                 </n-space>
             </div>
             <div class="n-common-tab-more">
-                <n-icon :component="ChevronDownOutline"/>
+                <n-dropdown
+                        :options="store.curTabList"
+                        :render-label="(option) => h('span', {}, $t(option.label))"
+                        @select="toPage"
+                >
+                    <n-icon :component="ChevronDownOutline"/>
+                </n-dropdown>
+
             </div>
             <n-dropdown
                 placement="bottom-start"

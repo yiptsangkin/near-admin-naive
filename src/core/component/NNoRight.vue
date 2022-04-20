@@ -6,7 +6,7 @@ import dict from '@cots/dict'
 import config from '@csts/config'
 import NColorPanel from './NColorPanel.vue'
 
-const iconUrl = config.publicPath ? `/${config.publicPath}/static/images/manage/404.png` : '/static/images/manage/404.png'
+const iconUrl = config.publicPath ? `/${config.publicPath}/static/images/manage/403.png` : '/static/images/manage/403.png'
 
 </script>
 
@@ -15,9 +15,9 @@ const iconUrl = config.publicPath ? `/${config.publicPath}/static/images/manage/
         <template #content>
             <div class="n-not-found">
                 <div class="n-not-found-icon">
-                    <img :src="iconUrl" alt="404">
+                    <img :src="iconUrl" alt="403">
                 </div>
-                <div class="n-not-found-tip">{{ $t(dict.errorPage.errorTip.notFoundTip) }}</div>
+                <div class="n-not-found-tip">{{ $t(dict.errorPage.errorTip.notRightTip) }}</div>
                 <div class="n-not-found-op">
                     <n-button size="small" type="primary">{{ $t(dict.errorPage.btnText) }}</n-button>
                 </div>

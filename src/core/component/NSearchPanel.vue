@@ -2,10 +2,10 @@
 import {
     NSpace,
     NButton,
-    NLayoutHeader,
 } from 'naive-ui'
 import { ref } from 'vue'
 import dict from '@cots/dict'
+import NColorPanel from '@cocp/NColorPanel.vue'
 
 const isCollapse = ref(true)
 const emit = defineEmits(['search', 'reset'])
@@ -43,18 +43,22 @@ const comReset = () => {
 </script>
 
 <template>
-    <n-layout-header class="n-common-search-panel">
-        <n-space>
-            <n-button size="small" @click="changeCollapse">{{ $t(isCollapse ? expandText : collapseText) }}</n-button>
-            <n-button size="small" @click="comReset">{{ $t(resetText) }}</n-button>
-            <slot name="n-custom-search-btn" :collapse="isCollapse">
-            </slot>
-            <n-button type="primary" size="small" @click="comSearch">{{ $t(searchText) }}</n-button>
-        </n-space>
-        <div class="n-custom-search-ctx">
-            <slot name="n-custom-search-ctx" :collapse="isCollapse"></slot>
-        </div>
-    </n-layout-header>
+    <n-color-panel>
+        <template #content>
+            <div class="n-common-search-panel">
+                <n-space>
+                    <n-button size="small" @click="changeCollapse">{{ $t(isCollapse ? expandText : collapseText) }}</n-button>
+                    <n-button size="small" @click="comReset">{{ $t(resetText) }}</n-button>
+                    <slot name="n-custom-search-btn" :collapse="isCollapse">
+                    </slot>
+                    <n-button type="primary" size="small" @click="comSearch">{{ $t(searchText) }}</n-button>
+                </n-space>
+                <div class="n-custom-search-ctx">
+                    <slot name="n-custom-search-ctx" :collapse="isCollapse"></slot>
+                </div>
+            </div>
+        </template>
+    </n-color-panel>
 </template>
 
 <style lang="scss" scoped>

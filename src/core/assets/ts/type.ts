@@ -84,7 +84,6 @@ export interface CpInfo {
     component: string,
     label: string,
     params?: CpParams,
-    pk?: string | number | boolean,
     key?: string | number | boolean,
     asyncComponent?: any,
     breadList?: any[]

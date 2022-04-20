@@ -1,0 +1,18 @@
+@import "../params";
+
+.page-cp-info{
+  padding: 6px 12px;
+  background: -webkit-linear-gradient(315deg, rgba($primary-color, 0.3) 25%, rgba($primary-blue, 0.3));
+  .page-cp-info-title{
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.panel-pd{
+  padding: 12px;
+}
+
+.panel-pd-c{
+  padding: 6px 12px;
+}

@@ -2,36 +2,36 @@ export default {
     locale: 'de',
     country: 'DE',
     loginPanel: {
-        validateTip: 'Bestätigungscode',
-        accountLogin: 'Konto-Passwort Login',
-        phoneLogin: 'Handynummer Login',
-        accountPhd: 'Bitte geben Sie Ihre Handynummer / Konto',
+        validateTip: 'Bestätigungs-Code',
+        accountLogin: 'Kontokennwort-Login.',
+        phoneLogin: 'Mobiltelefonnummer Login',
+        accountPhd: 'Bitte geben Sie Ihre Handynummer / Konto ein',
         passwordPhd: 'Bitte geben Sie Ihr Passwort ein',
-        validateCodePhd: 'Bitte Sicherheitscode eingeben',
+        validateCodePhd: 'Bitte geben Sie den Bestätigungscode ein',
         loginBtn: 'Einloggen',
-        autoLogin: 'automatische Log-in',
+        autoLogin: 'Auto Login',
         forgetPwd: 'Passwort vergessen',
-        accountReq: 'Handy-Nummer / Konto darf nicht leer sein',
-        passwordReq: 'Passwort darf nicht leer sein',
-        validateCodeReq: 'Bestätigungscode müssen ausgefüllt werden'
+        accountReq: 'Handynummer / Konto kann nicht leer sein',
+        passwordReq: 'Das Passwort kann nicht leer sein',
+        validateCodeReq: 'Bestätigungscode muss gefüllt sein'
     },
     menuObj: {
         homePage: 'Titelseite',
-        'menu-0': 'Basisfunktionen',
-        'menu-1': 'Komponente Verwendung',
+        'menu-0': 'Grundfunktion',
+        'menu-1': 'Verwendung von Komponenten',
         'menu-0-0': 'Technische Auswahl',
-        'menu-0-0-0': 'Vue3.x',
-        'menu-0-0-1': 'Naiveui',
+        'menu-0-0-0': 'Vue3.x.',
+        'menu-0-0-1': 'Naivui.',
         'menu-0-0-2': 'Pinia',
-        'menu-0-0-3': 'In der Nähe-admin',
-        'menu-1-0': 'Einbauteil',
-        'menu-1-0-0': 'Suchfenster',
+        'menu-0-0-3': 'In der Nähe-admin.',
+        'menu-1-0': 'Eingebaute Komponente',
+        'menu-1-0-0': 'Suchfeld',
         'menu-1-0-1': 'Generelle Form',
         'menu-0-1': 'Rahmenfunktion',
-        'menu-0-1-0': 'Seite Komponente',
+        'menu-0-1-0': 'Seitenkomponente',
         'menu-0-1-0-0': 'Komponentenseite',
-        'menu-0-1-0-1': 'URL-Seite',
-        'menu-0-1-1': 'Built-in Funktion',
+        'menu-0-1-0-1': 'URL-Seite.',
+        'menu-0-1-1': 'Integrierte Funktion',
         'menu-0-1-1-0': 'Projektkonfiguration',
         'menu-0-1-1-1': 'Globalisierung'
     },
@@ -56,19 +56,19 @@ export default {
         hu: 'ungarisch',
         hy: 'Armenisch',
         id: 'indonesische Sprache',
-        is: 'isländische Sprache',
+        is: 'Isländische Sprache',
         it: 'Italienisch',
         ja: 'japanisch',
         kn: 'Kanada',
         ko: 'Koreanisch',
-        'ku-iq': 'Zentral Kurdue',
-        lv: 'Zentral Kurdue',
+        'ku-iq': 'Zentralkurdue.',
+        lv: 'Zentralkurdue.',
         mk: 'mazedonisch',
         'mn-mn': 'mongolisch',
         'ms-my': 'malaiisch',
         nb: 'Norwegische Sprache',
         'ne-np': 'Nepalese',
-        'nl-be': 'Flan Sprache',
+        'nl-be': 'Flansprache',
         nl: 'Niederländisch',
         pl: 'Polieren',
         'pt-br': 'Brasilianisches Portugiesisch',
@@ -80,7 +80,7 @@ export default {
         sr: 'serbisch',
         sv: 'schwedische Sprache',
         ta: 'Tamilisch',
-        th: 'thailändisch',
+        th: 'Thailändisch',
         tr: 'Türkisch',
         uk: 'ukrainisch',
         vi: 'Vietnamesisch',
@@ -88,45 +88,45 @@ export default {
         'zh-tw': 'traditionelles Chinesisch'
     },
     sysInfo: {
-        description: 'Holzwerk Rahmen neutral Entwicklung auf Basis von Vue3 und Naiveui'
+        description: 'Hölzerner neutraler Entwicklungsrahmen basierend auf VUE3 und Naivui'
     },
     validateButton: {
-        unableValidate: 'Handy-Nummer leer ist oder erfüllt nicht die Regeln',
-        getValidateCode: 'erhalten Bestätigungscode'
+        unableValidate: 'Die Mobiltelefonnummer ist leer oder erfüllt die Regeln nicht',
+        getValidateCode: 'Bestätigungscode erhalten.'
     },
     tagObj: {
-        closeAll: 'Schließen Sie alle Etiketten',
+        closeAll: 'Alle Etiketten schließen',
         closeCur: 'Schließen Sie das aktuelle Etikett',
         closeOther: 'Schließen Sie andere Etiketten',
         closeRight: 'Schließen Sie das richtige Etikett',
-        singlePage: 'Stand-alone-Seite',
+        singlePage: 'Stand-Alone-Seite',
         refreshPage: 'Seite neu laden',
         affixPage: 'Feste Seite',
-        cancelAffixPage: 'Abbrechen Fixierung',
+        cancelAffixPage: 'Befestigung abbrechen',
         errorTip: {
-            homePageCloseError: 'Start ist nicht zu schließen erlaubt',
-            affixPageCloseError: 'Die feste Seite ist nicht zu schließen erlaubt',
-            homePageAffixError: 'Startseite kann nicht storniert werden'
+            homePageCloseError: 'Zuhause darf nicht schließen',
+            affixPageCloseError: 'Die feste Seite darf nicht schließen',
+            homePageAffixError: 'Zuhause kann nicht storniert werden'
         },
-        checkSave: 'Haben Sie die Seite schließen? (Bitte stellen Sie sicher, dass der rote Etikett Seiteninhalt wird gespeichert)',
-        cancelClose: 'geschlossen Betrieb'
+        checkSave: 'Schließst du die Seite? (Bitte stellen Sie sicher, dass der rote Label-Seiteninhalt gespeichert wurde)',
+        cancelClose: 'Geschlossener Betrieb.'
     },
     modalObj: {
         tip: 'Hinweis',
         warn: 'warnen',
         confirm: 'bestätigen Sie',
-        yes: 'Jawohl',
-        no: 'Nein'
+        yes: 'Ja',
+        no: 'nein'
     },
     userPanel: {
         frontendLog: 'Front-End-Protokoll',
-        customSetting: 'personalisierte Einstellung',
-        cleanConfig: 'klare Konfiguration',
+        customSetting: 'Personalisierte Einstellung.',
+        cleanConfig: 'Klare Konfiguration',
         cleanCache: 'Cache leeren'
     },
     searchPanel: {
         expandText: 'Entfalten',
-        collapseText: 'wegräumen',
+        collapseText: 'Versetzen',
         resetText: 'Zurücksetzen',
         searchText: 'Anfragen'
     },
@@ -138,16 +138,70 @@ export default {
         tableTitle: 'Protokollliste',
         tableColumn: {
             index: 'Seriennummer',
-            desc: 'Log Beschreibung',
-            type: 'Logtyp',
+            desc: 'Protokollbeschreibung',
+            type: 'Protokolltyp.',
             time: 'Zeit',
             op: 'arbeiten'
+        },
+        extra: {
+            view: 'Überprüfen',
+            logDetail: 'Protokollierung',
+            logLevel: 'Protokollstufe',
+            logType: 'Protokolltyp.',
+            logDesc: 'Protokollbeschreibung',
+            requestDetail: 'Anfragedetails',
+            clearLog: 'Leeres log.',
+            clearLogSuccess: 'Erfolgreich'
         }
     },
     logTimeList: {
         halfDay: 'Einen halben Tag',
-        fullDay: 'an einem Tag',
+        fullDay: 'in einem Tag',
         weekDay: 'innerhalb einer Woche',
         monthDay: 'Innerhalb eines Monats'
+    },
+    comTable: {
+        allPick: 'Wählen Sie Alle'
+    },
+    errorPage: {
+        errorTip: {
+            notFoundTip: 'Entschuldigung, die Seite, die Sie besucht haben, existiert nicht.',
+            notRightTip: 'Leider haben Sie keine Erlaubnis, auf diese Seite zuzugreifen.',
+            noServiceTip: 'Sorry, der Server hat ein Problem, bitte versuchen Sie es später erneut'
+        },
+        btnText: 'Schließen Seite'
+    },
+    guide: {
+        pageComponent: {
+            currentCp: 'Aktuelle Komponente',
+            tableTitle: 'Buchseite',
+            paramKey: 'Parameterschlüssel',
+            paramValue: 'Parameterwert',
+            tip: 'Der Parameter der Seitenkomponente kann durch den Parameterparameter der Komponenteneinheit ausgeführt werden.',
+            checkSave: '<Boolean> `checksave` zeigt an, ob Sie eine Eingabeaufforderung erstellen, wenn er geschlossen ist',
+            apiNew: '<Boolean> `apinew" zeigt an, ob die Seite bestätigt wird',
+            isAffix: '<Boolean> `isaffix` zeigt an, ob die aktuelle Seite behoben ist',
+            pageUrl: '<String> `PageUrl" zeigt die externe Kettenadresse der Seitenkomponente an',
+            pageApi: 'Seitenoperations-API.',
+            addPage: 'Neue Seite',
+            refreshPage: 'Seite neu laden',
+            closePage: 'Schließen Seite',
+            state: 'Zustand',
+            func: 'Methode',
+            example: 'Beispiel',
+            description: 'beschreiben',
+            exampleCode: 'Beispielcode'
+        },
+        i18nInternational: {
+            supportLang: {
+                tip: 'Aktuelle Supportsprache.'
+            }
+        },
+        applicationConfig: {
+            applicationConfig: 'Anwendungskonfiguration',
+            pageConfig: 'SPA-Konfiguration',
+            contextDir: 'Wenn das Paket das sekundäre Verzeichnis des App-Names erhöhen muss, können Sie die beiden Dateien öffentliche Variablen in Build / config.js und SRC / Custom / Assets / TS / config ändern.',
+            pageConfigDesc: 'Der Inhalt in page.config.json wird in öffentlicher / basic.html gerendert. Der derzeit unterstützte Typ verfügt über CSS. JS kann auf diese Weise für einige größere Bibliotheken von Drittanbietern wie Babylonjs geladen werden.'
+        }
     }
 }

@@ -12,13 +12,14 @@ let cacheCurTabList = [
     {
         component: 'home/HomePage',
         label: 'menuObj.homePage',
-        pk: RDN_KEY,
+        key: RDN_KEY,
         breadList: [],
         asyncComponent: undefined,
         params: {
             isAffix: true,
             pageUrl: undefined,
-            checkSave: false
+            checkSave: false,
+            apiNew: false
         }
     }
 ]
@@ -138,8 +139,10 @@ const coreStore = defineStore('coreStore', {
             }
         },
         affixTab (idx: number, isAffix: boolean) {
-            this.curTabList[idx].params.isAffix = isAffix
-            utils.setCacheLocalStorage('nearCacheTabList', JSON.stringify(this.curTabList))
+            if (idx !== 0) {
+                this.curTabList[idx].params.isAffix = isAffix
+                utils.setCacheLocalStorage('nearCacheTabList', JSON.stringify(this.curTabList))
+            }
         },
         closeAll () {
             this.curTabList = this.curTabList.filter((item) => item.params && item.params.isAffix)
@@ -147,19 +150,28 @@ const coreStore = defineStore('coreStore', {
             this.setCurTabIdx(0)
         },
         closeRight (idx: number) {
-            this.curTabList.splice(idx + 1)
+            this.curTabList = this.curTabList.filter((item, index) => (item.params && item.params.isAffix) || index < idx)
             utils.setCacheLocalStorage('nearCacheTabList', JSON.stringify(this.curTabList))
             if (idx < this.curTabIdx) {
                 this.setCurTabIdx(idx)
             }
         },
         closeOther (idx: number) {
-            this.curTabList = this.curTabList.filter((item, i) => (i === idx || i === 0))
+            this.curTabList = this.curTabList.filter((item, i) => (i === idx || i === 0 || (item.params && item.params.isAffix)))
             utils.setCacheLocalStorage('nearCacheTabList', JSON.stringify(this.curTabList))
-            this.setCurTabIdx(1)
+            this.setCurTabIdx(idx)
         },
         setFullScreen (fullScreen: boolean) {
             this.fullScreen = fullScreen
+        },
+        singlePage (idx) {
+            const curCp = this.curTabList[idx]
+            if (utils.checkIfUrl(curCp.component)) {
+                window.open(curCp.component, '_blank')
+            } else {
+                const basePath = utils.getBasePath()
+                window.open(`/${basePath}/single/${curCp.component}`)
+            }
         }
     },
 })

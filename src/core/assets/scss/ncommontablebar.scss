@@ -4,4 +4,32 @@
   border-top: 2px solid $primary-color;
   font-weight: 700;
   padding: 8px 12px;
+  .n-table-bar-icon{
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+
+.n-column-item-input{
+  width: 56px;
+  :deep(.n-input){
+    height: 20px;
+    input{
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.n-column-item{
+  .n-column-item-icon{
+    cursor: pointer;
+    &:hover, &.cur{
+      color: $primary-color;
+    }
+  }
 }

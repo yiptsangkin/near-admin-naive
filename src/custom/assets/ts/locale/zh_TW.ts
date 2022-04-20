@@ -142,6 +142,16 @@ export default {
             type: '日誌類型',
             time: '時間',
             op: '操作'
+        },
+        extra: {
+            view: '查看',
+            logDetail: '日誌明細',
+            logLevel: '日誌等級',
+            logType: '日誌類型',
+            logDesc: '日誌描述',
+            requestDetail: '請求明細',
+            clearLog: '清空日誌',
+            clearLogSuccess: '清空成功'
         }
     },
     logTimeList: {
@@ -149,5 +159,49 @@ export default {
         fullDay: '一天內',
         weekDay: '一周內',
         monthDay: '一個月內'
+    },
+    comTable: {
+        allPick: '全選'
+    },
+    errorPage: {
+        errorTip: {
+            notFoundTip: '抱歉，你訪問的頁面不存在',
+            notRightTip: '抱歉，你沒有權限訪問該頁面',
+            noServiceTip: '抱歉，服務器發生了問題，請稍後重試'
+        },
+        btnText: '關閉頁面'
+    },
+    guide: {
+        pageComponent: {
+            currentCp: '當前組件',
+            tableTitle: '頁面傳參',
+            paramKey: '參數鍵',
+            paramValue: '參數值',
+            tip: '可以通過組件實體的params參數進行頁面組件的傳參數',
+            checkSave: '<Boolean>`checkSave`表示是否在關閉頁面的時候拋出提示',
+            apiNew: '<Boolean>`apiNew`表示是否對頁面進行權限校驗',
+            isAffix: '<Boolean>`isAffix`表示是否對固定當前頁面',
+            pageUrl: '<String>`pageUrl`表示頁面組件外鏈地址',
+            pageApi: '頁面操作api',
+            addPage: '新增頁面',
+            refreshPage: '刷新頁面',
+            closePage: '關閉頁面',
+            state: '狀態',
+            func: '方法',
+            example: '例子',
+            description: '描述',
+            exampleCode: '示例代碼'
+        },
+        i18nInternational: {
+            supportLang: {
+                tip: '當前支持語種'
+            }
+        },
+        applicationConfig: {
+            applicationConfig: '應用配置',
+            pageConfig: 'SPA配置',
+            contextDir: '如果打包需要增加應用名的二級目錄，可以通過修改build/config.js和src/custom/assets/ts/config.ts中兩個文件publicPath變量。',
+            pageConfigDesc: 'page.config.json中的內容將會在public/basic.html中渲染，目前支持的type有css、js對於一些較大的第三方庫如babylonjs等可以嘗試通過這種方式進行加載。'
+        }
     }
 }

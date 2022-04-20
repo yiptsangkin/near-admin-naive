@@ -1,14 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import config from '@csts/config'
+import utils from '@cots/utils'
 
 const NLoginPanel = () => import('../view/login/NLoginPanel.vue')
 
-let basePath: string
-if (config.publicPath) {
-    basePath = window.location.pathname.split('/').slice(1, 3).join('/')
-} else {
-    basePath = window.location.pathname.split('/').slice(1, 2).join('/')
-}
+const basePath = utils.getBasePath()
 
 const VueRouter = createRouter({
     history: createWebHistory(basePath),

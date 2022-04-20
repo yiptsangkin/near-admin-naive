@@ -9,7 +9,7 @@ export default {
         passwordPhd: 'Please enter your password',
         validateCodePhd: 'please enter verification code',
         loginBtn: 'Log in',
-        autoLogin: 'automatic log-in',
+        autoLogin: 'auto login',
         forgetPwd: 'Forgot password',
         accountReq: 'Mobile phone number / account cannot be empty',
         passwordReq: 'password can not be blank',
@@ -17,7 +17,7 @@ export default {
     },
     menuObj: {
         homePage: 'front page',
-        'menu-0': 'basic functions',
+        'menu-0': 'basic function',
         'menu-1': 'Component use',
         'menu-0-0': 'Technical selection',
         'menu-0-0-0': 'Vue3.x',
@@ -142,6 +142,16 @@ export default {
             type: 'Log type',
             time: 'time',
             op: 'operate'
+        },
+        extra: {
+            view: 'Check',
+            logDetail: 'Logging',
+            logLevel: 'Log level',
+            logType: 'Log type',
+            logDesc: 'Log description',
+            requestDetail: 'Request details',
+            clearLog: 'Empty log',
+            clearLogSuccess: 'Successful'
         }
     },
     logTimeList: {
@@ -149,5 +159,49 @@ export default {
         fullDay: 'in one day',
         weekDay: 'within a week',
         monthDay: 'Within a month'
+    },
+    comTable: {
+        allPick: 'select all'
+    },
+    errorPage: {
+        errorTip: {
+            notFoundTip: 'Sorry, the page you visited does not exist.',
+            notRightTip: 'Sorry, you have no permission to access this page.',
+            noServiceTip: 'Sorry, the server has a problem, please try again later'
+        },
+        btnText: 'Close page'
+    },
+    guide: {
+        pageComponent: {
+            currentCp: 'Current component',
+            tableTitle: 'Page',
+            paramKey: 'Parameter key',
+            paramValue: 'Parameter value',
+            tip: 'The parameter of the page component can be performed by the parameter parameter of the component entity.',
+            checkSave: '<Boolean> `checksave` indicates whether to throw a prompt when it is closed',
+            apiNew: '<Boolean> `Apinew` indicates whether to verify the page',
+            isAffix: '<Boolean> `isaffix` indicates whether the current page is fixed',
+            pageUrl: '<String> `PageURL` indicates the external chain address of the page component',
+            pageApi: 'Page Operation API',
+            addPage: 'New page',
+            refreshPage: 'refresh page',
+            closePage: 'Close page',
+            state: 'state',
+            func: 'method',
+            example: 'example',
+            description: 'describe',
+            exampleCode: 'Sample code'
+        },
+        i18nInternational: {
+            supportLang: {
+                tip: 'Current support language'
+            }
+        },
+        applicationConfig: {
+            applicationConfig: 'Application configuration',
+            pageConfig: 'SPA configuration',
+            contextDir: 'If the package needs to increase the secondary directory of the app name, you can modify the two file publicPath variables in Build / Config.js and SRC / Custom / Assets / TS / Config.ts.',
+            pageConfigDesc: 'The content in Page.config.json will be rendered in public / Basic.html. The currently supported Type has CSS. JS can be loaded in this way for some larger third-party libraries such as Babylonjs.'
+        }
     }
 }

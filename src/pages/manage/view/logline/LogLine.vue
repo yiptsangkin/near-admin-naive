@@ -12,6 +12,8 @@ import {
     NConfigProvider,
     NCode,
     NScrollbar,
+    NButton,
+    useMessage
 } from 'naive-ui'
 import NSearchPanel from '@cocp/NSearchPanel.vue'
 import NCommonTable from '@cocp/NCommonTable.vue'
@@ -21,10 +23,12 @@ import { ref, h, reactive, onMounted } from 'vue'
 import dict from '@cots/dict'
 import utils from '@csts/utils'
 import { ComTable } from '@cots/type'
+import i18n from '@colocale/lang'
 
 highlight.registerLanguage('json', json)
+const message = useMessage()
 
-const searchForm = ref({
+const initSearchForm = {
     model: {
         dateArea: '1d'
     },
@@ -34,12 +38,14 @@ const searchForm = ref({
             trigger: 'blur',
         },
     }
-})
+}
+
+const searchForm = ref(utils.deepClone(initSearchForm))
 
 const comModal = reactive({
     props: {
         visible: false,
-        title: '日志明细',
+        title: dict.logLine.extra.logDetail,
         width: '800px'
     },
     model: {
@@ -80,8 +86,14 @@ const commonQuery = () => {
         }
     })
 }
+
+const clearLog = () => {
+    utils.logLineObj.cleanLog()
+    message.success(i18n.t(dict.logLine.extra.clearLogSuccess))
+}
+
 const commonReset = () => {
-    console.log('#2')
+    searchForm.value = utils.deepClone(initSearchForm)
 }
 const formatLogData = (data) => JSON.stringify(data, null, 4)
 onMounted(() => {
@@ -126,6 +138,15 @@ onMounted(() => {
         </template>
     </n-search-panel>
     <n-common-table :table-obj="comTableObj">
+        <template #table-btn>
+            <n-button
+                    type="primary"
+                    size="small"
+                    @click="clearLog"
+            >
+                {{ $t(dict.logLine.extra.clearLog) }}
+            </n-button>
+        </template>
         <template #data-table="{ selectColumns, innerHeight }">
             <n-data-table
                 scroll-x
@@ -144,13 +165,13 @@ onMounted(() => {
             v-model:show="comModal.props.visible"
             preset="dialog"
             :show-icon="false"
-            :title="comModal.props.title"
+            :title="$t(comModal.props.title)"
             :style="{
                 width: comModal.props.width,
             }"
     >
         <n-h6 prefix="bar" align-text>
-            日志详情
+            {{ $t(dict.logLine.extra.logDetail) }}
         </n-h6>
         <n-form
                 class="n-view-disabled"
@@ -167,17 +188,17 @@ onMounted(() => {
                     size="small"
             >
                 <n-gi>
-                    <n-form-item label="日志类型" path="level">
+                    <n-form-item :label="$t(dict.logLine.extra.logLevel)" path="level">
                         <n-input size="small" disabled v-model:value="comModal.model.level"></n-input>
                     </n-form-item>
                 </n-gi>
                 <n-gi>
-                    <n-form-item label="日志类型" path="descriptor">
+                    <n-form-item :label="$t(dict.logLine.extra.logType)" path="descriptor">
                         <n-input size="small" disabled v-model:value="comModal.model.descriptor"></n-input>
                     </n-form-item>
                 </n-gi>
                 <n-gi :span="2">
-                    <n-form-item label="日志描述" path="namespace">
+                    <n-form-item :label="$t(dict.logLine.extra.logDesc)" path="namespace">
                         <n-input size="small" type="textarea"
                                  :autosize="{
                                     minRows: 3,
@@ -189,7 +210,7 @@ onMounted(() => {
             </n-grid>
         </n-form>
         <n-h6 prefix="bar" align-text>
-            请求数据
+            {{ $t(dict.logLine.extra.requestDetail) }}
         </n-h6>
         <n-scrollbar style="max-height: 480px">
             <n-config-provider :hljs="highlight">

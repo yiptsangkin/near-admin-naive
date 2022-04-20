@@ -16,4 +16,9 @@ app.use(router)
 app.use(pinia)
 app.use(i18n.i18n)
 
+// register global directives
+import('@csts/directive').then(({ default: directive }) => {
+    Object.keys(directive).forEach((key) => app.directive(key, directive[key]))
+})
+
 app.mount('#app')

@@ -7,6 +7,7 @@ import {
 import { computed, h } from 'vue'
 
 import costore from '@costore/index'
+import utils from '@csts/utils'
 
 const store = costore()
 
@@ -22,6 +23,18 @@ const finalBreadOptions = computed(() => {
     return []
 })
 
+const toPage = (key, menu) => {
+    const currentMenuIdx = utils.getCurTabIdx(store.curTabList, key)
+    if (currentMenuIdx === -1) {
+        // new page
+        store.addCurTab(menu)
+        store.setCurTabIdx(store.curTabList.length - 1)
+    } else {
+        // old page
+        store.setCurTabIdx(currentMenuIdx)
+    }
+}
+
 </script>
 
 <template>
@@ -35,6 +48,7 @@ const finalBreadOptions = computed(() => {
                     <n-dropdown
                             :options="finalBreadOptions"
                             :render-label="(option) => h('span', {}, $t(option.label))"
+                            @select="toPage"
                     >
                         {{ $t(currentTab.label) }}
                     </n-dropdown>
